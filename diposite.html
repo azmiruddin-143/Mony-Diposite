@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div>
+        <div class="mockup-phone border-primary ">
+            <div class="camera"></div>
+            <div class="display">
+                <!-- mobile er body start -->
+                <div class="artboard artboard-demo phone-2">
+                  
+                      <div class="flex justify-between px-5 w-[100%] align-middle items-center pt-2">
+                           <div>
+                               <h1 id="all-amount" class="text-3xl text-black font-bold">4500</h1>
+                               <p>Available Balance</p>
+                           </div>
+
+                           <div>
+                              <button id="logout-btn" class="bg-[#ff0000] text-white py-1 px-2 rounded-2xl text-sm">Logout</button>
+                           </div>
+                      </div>
+
+                      <!-- divaider -->
+
+                      <div class="flex w-full flex-col">
+                        <div class="divider"></div>
+                      </div>
+
+                        <!-- add mony and chasout -->
+                      <div class="mt-8 mb-8">
+                          <button id="addmony-btn" class="border border-[#757474] py-2 px-2 rounded-md">Add mony</button>
+                          <button id="chasout-btn" class="border border-[#757474] py-2 px-2 rounded-md">Chasout</button>
+                      </div>
+
+                      <!-- form input start -->
+                                <!-- diposite form -->
+                          <div id="diposite-hide" class="card bg-base-100 w-[90%] max-w-sm shrink-0 shadow-2xl hidden">
+                            <form class="card-body">
+                              <div class="form-control">
+                                <label class="label">
+                                  <span class="label-text">Amount</span>
+                                </label>
+                                <input id="di-amount" type="number" placeholder="amount" class="input input-bordered" required />
+                              </div>
+                              <div class="form-control">
+                                <label class="label">
+                                  <span class="label-text">Phone Number</span>
+                                </label>
+                                <input id="di-number" type="number" placeholder="phone number" class="input input-bordered" required />
+                              </div>
+                              <div class="form-control">
+                                <label class="label">
+                                  <span class="label-text">Pin Code</span>
+                                </label>
+                                <input id="di-pin" type="password" placeholder="pin code" class="input input-bordered"  />
+                               
+                              </div>
+                              <div class="form-control mt-6">
+                                <button id="diposite-btn" class="btn btn-primary">Diposite</button>
+                              </div>
+                            </form>
+                          </div>
+                           
+                           
+                            <!-- chasout form -->
+                        
+                            <div id="chasout-hide" class="card bg-base-100 w-[90%] max-w-sm shrink-0 shadow-2xl hidden">
+                                <form class="card-body">
+                                  <div class="form-control">
+                                    <label class="label">
+                                      <span class="label-text">Amount</span>
+                                    </label>
+                                    <input id="cas-amount" type="number" placeholder="amount" class="input input-bordered" required />
+                                  </div>
+                                  <div class="form-control">
+                                    <label class="label">
+                                      <span class="label-text">Phone Number</span>
+                                    </label>
+                                    <input id="cas-number" type="number" placeholder="phone number" class="input input-bordered" required />
+                                  </div>
+                                  <div class="form-control">
+                                    <label class="label">
+                                      <span class="label-text">Pin Code</span>
+                                    </label>
+                                    <input id="cas-pin" type="password" placeholder="pin code" class="input input-bordered"  />
+                                   
+                                  </div>
+                                  <div class="form-control mt-6">
+                                    <button id="casout-btn" class="btn btn-primary">Chasout</button>
+                                  </div>
+                                </form>
+                              </div>
+                
+                </div>
+                <!-- mobile er body end -->
+            </div>
+        </div>
+    </div>
+
+      <script src="diposite.js"></script>
+</body>
+</html>
+
+
+
+
+
